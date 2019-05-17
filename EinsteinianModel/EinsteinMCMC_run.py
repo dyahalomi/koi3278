@@ -221,13 +221,6 @@ print 'Reduced chi-square: ',  (loglikeli(
     p, t, f, ferr, cuts, crowding, isobundle, npert=subsample, minimize=True) /
     (len(t[good]) - len(p) + 3))
 
-
-
-
-
-
-
-
 if not doplot:
      quit()
 
