@@ -4,7 +4,7 @@ This repository provides the code used to model the self-lensing binary, KOI-327
 
 If you make use of this code please cite our work: [Yahalomi et al., 2019](https://arxiv.org/abs/1904.11063).
 
-We have also included the PARSEC isochrones used (PARSECv1.1/) as well as wget scripts to download the Kepler light curves (to lightcurve/) and white dwarf models from Pierre Bergeron (wdmodels/).
+We have also included the PARSEC isochrones used (PARSECv1.1/) as well as wget scripts to download the Kepler light curves (to lightcurve/) and white dwarf models from Pierre Bergeron (wdmodels/). We also provide the radial velocity observations from HIRES and TRES as well as the spectroscopic estimates of the stellar primary parameters from SPC, Brewer, and SpecMatch analysis of HIRES spectra.
 
 The code provided here was in part adapted from the analysis used in [Kruse and Agol, 2014](https://science.sciencemag.org/content/344/6181/275) and that is available on their [GitHub](https://github.com/ethankruse/koi3278). The Gelman-Rubin function is adapted from the [RadVel Github](https://github.com/California-Planet-Search/radvel): as described in [Fulton et al., 2018](http://adsabs.harvard.edu/abs/2018PASP..130d4504F).
 
