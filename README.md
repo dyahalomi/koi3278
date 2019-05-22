@@ -14,15 +14,15 @@ KOI-3278 was discovered in 2014 in Kepler photometry ([Kruse and Agol, 2014](htt
 ## General Tips
 
 The code should run as long as python has the following packages installed:
-  -sys
-  -os
-  -subprocess
-  -numpy
-  -scipy
-  -matplotlib
-  -glob
-  -astropy
-  -emcee
+-sys
+-os
+-subprocess
+-numpy
+-scipy
+-matplotlib
+-glob
+-astropy
+-emcee
 
 
 The code is broken up into 5 folders: CompareWDmasses, EinsteinianModel, JointModel, NewtonianDynamicalModel, and NewtonianOrbitalModel.
