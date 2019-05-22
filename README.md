@@ -11,7 +11,7 @@ The code provided here was in part adapted from the analysis used in [Kruse and 
 KOI-3278 was discovered in 2014 in Kepler photometry ([Kruse and Agol, 2014](https://science.sciencemag.org/content/344/6181/275)). KOI-3278 now has 16 follow-up spectroscopic observations from HIRES (8 observations) and TRES (8 observations). These observations provide us with spectroscopic estimates of the stellar primary parameters (surface gravity, metallicity, effective temperature, and v sin i) as well as radial velocity observations. With these new observations, we can model the system independently with Einsteinian microlensing models (using Kepler photometry and spectroscopic estimates of primary parameters), independently with Newtonian dynamical models (using spectroscopic estimates of the primary parameters and spectroscopic radial velocities), and a joint Einsteinian and Newtonian model (using Kepler photometry, spectroscopic estimates of primary parameters, and spectroscopic radial velocities).
 
 
-The code is broken up into 5 folders: CompareWDmasses, EinsteinianModel, JointModel, NewtonianMassModel, and NewtonianModel.
+The code is broken up into 5 folders: CompareWDmasses, EinsteinianModel, JointModel, NewtonianDynamicalModel, and NewtonianOrbitalModel.
 
 
 
@@ -31,4 +31,13 @@ This folder contains the python code used in order to create the Joint Einsteini
 
 ## NewtonianDynamicalModel
 
-This folder contains the python code used in order to create the complete Newtonian dynamical model. The supplementary functions are in the "NewtonianMassMCMC_funcs.py" and the orbital fitting specific functions are in "JointMCMC_RVfuncs.py". In order to run the MCMC model, use "JointMCMC_run.py". In order to analyze the MCMC resulting chain, use "JointMCMC_analyze.py". This code uses the Kepler photometry, the spectroscopic estimates of stellar primary parameters using SPC, Brewer, or SpecMatch analysis on HIRES spectra, and the radial velocity observations from HIRES and TRES. The primary stellar parameter estimates from SPC, Brewer, and SpecMatch are in the "JointMCMC_funcs.py" file. The radial velocity observations from TRES and HIRES are in the "inputs.py" file.
+This folder contains the python code used in order to create the complete Newtonian dynamical model. The supplementary functions are in the "NewtonianDynamicalMCMC_funcs.py" and the orbital fitting specific functions are in "NewtonianDynamicalMCMC_RVfuncs.py". In order to run the MCMC model, use "NewtonianDynamicalMCMC_run.py". In order to analyze the MCMC resulting chain, use "NewtonianDynamicalMCMC_analyze.py". This code uses the spectroscopic estimates of stellar primary parameters using SPC, Brewer, or SpecMatch analysis on HIRES spectra and the radial velocity observations from HIRES and TRES. The primary stellar parameter estimates from SPC, Brewer, and SpecMatch are in the "NewtonianDynamicalMCMC_run.py" file. The radial velocity observations from TRES and HIRES are in the "NewtonianDynamicalMCMC_run.py" file.
+
+
+## NewtonianOrbitalModel
+
+This folder contains the python code used in order to create the orbital fit the the radial velocity observations only. The supplementary functions are in the "NewtonianOrbitalMCMC_funcs.py" and the orbital fitting specific functions are in "NewtonianOrbitalMCMC_RVfuncs.py". In order to run the MCMC model, use "NewtonianOrbitalMCMC_run.py". In order to analyze the MCMC resulting chain, use "NewtonianOrbitalMCMC_analyze.py". This code uses the radial velocity observations from HIRES and TRES. The radial velocity observations from TRES and HIRES are in the "NewtonianOrbitalMCMC_run.py" file.
+
+
+
+
