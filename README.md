@@ -12,18 +12,11 @@ KOI-3278 was discovered in 2014 in Kepler photometry ([Kruse and Agol, 2014](htt
 
 
 ## General Tips
+In order to run an MCMC model, you must set the domcmc variable in the "*_run.py" files to True. In order to create a LaTeX tabel with the chain results, set the outfile variable in the "*_analyze.py" files to the desired output file name. You can change the number of walkers and the number of iterations in the MCMC run in the "*_run.py". You can change the burnout length in the "*_analyze.py" files.
 
-The code should run as long as python has the following packages installed:
--sys
--os
--subprocess
--numpy
--scipy
--matplotlib
--glob
--astropy
--emcee
 
+
+## Folders
 
 The code is broken up into 5 folders: CompareWDmasses, EinsteinianModel, JointModel, NewtonianDynamicalModel, and NewtonianOrbitalModel.
 
