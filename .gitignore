@@ -1,4 +1,4 @@
-# ignore all .DS_store files (chains)
+# ignore all .DS_store files
 *.DS_store
 
 #ignore all .pyc files
