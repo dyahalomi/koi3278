@@ -14,7 +14,7 @@ KOI-3278 was discovered in 2014 in Kepler photometry ([Kruse and Agol, 2014](htt
 
 
 ## General Tips
-In order to run an MCMC model, you must set the `domcmc` variable in the `*_run.py` files to True. In order to create a LaTeX tabel with the median and/or best fit results from the MCMC output chain, set the `outfile` variable in the `*_analyze.py` files to the desired output file name. You can change the number of walkers and the number of iterations in the MCMC run in the `*_run.py`. You can change the burnout length in the `*_analyze.py` files.
+In order to run an MCMC model, you must set the `domcmc` variable in the `*_run.py` files to True. In order to create a LaTeX tabel with the median and/or best fit results from the MCMC output chain, set the `outfile` variable in the `*_analyze.py` files to the desired output file name. You can change the number of walkers and the number of iterations in the MCMC run in the `*_run.py` files. You can change the burnout length in the `*_analyze.py` files.
 
 
 
