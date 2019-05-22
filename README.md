@@ -8,11 +8,13 @@ We have also included the PARSEC isochrones used (PARSECv1.1/) as well as wget s
 
 The code provided here was in part adapted from the analysis used in [Kruse and Agol, 2014](https://science.sciencemag.org/content/344/6181/275) and that is available on their [GitHub](https://github.com/ethankruse/koi3278). The Gelman-Rubin function is adapted from the [RadVel Github](https://github.com/California-Planet-Search/radvel): as described in [Fulton et al., 2018](http://adsabs.harvard.edu/abs/2018PASP..130d4504F).
 
+The MCMC is done using the emcee package: [GitHub](https://github.com/dfm/emcee), [Paper](https://arxiv.org/abs/1202.3665).
+
 KOI-3278 was discovered in 2014 in Kepler photometry ([Kruse and Agol, 2014](https://science.sciencemag.org/content/344/6181/275)). KOI-3278 now has 16 follow-up spectroscopic observations from HIRES (8 observations) and TRES (8 observations). These observations provide us with spectroscopic estimates of the stellar primary parameters (surface gravity, metallicity, effective temperature, and v sin i) as well as radial velocity observations. With these new observations, we can model the system independently with Einsteinian microlensing models (using Kepler photometry and spectroscopic estimates of primary parameters), independently with Newtonian dynamical models (using spectroscopic estimates of the primary parameters and spectroscopic radial velocities), and a joint Einsteinian and Newtonian model (using Kepler photometry, spectroscopic estimates of primary parameters, and spectroscopic radial velocities).
 
 
 ## General Tips
-In order to run an MCMC model, you must set the domcmc variable in the "*_run.py" files to True. In order to create a LaTeX tabel with the chain results, set the outfile variable in the "*_analyze.py" files to the desired output file name. You can change the number of walkers and the number of iterations in the MCMC run in the "*_run.py". You can change the burnout length in the "*_analyze.py" files.
+In order to run an MCMC model, you must set the `domcmc` variable in the `*_run.py` files to True. In order to create a LaTeX tabel with the chain results, set the `outfile` variable in the `*_analyze.py` files to the desired output file name. You can change the number of walkers and the number of iterations in the MCMC run in the `*_run.py`. You can change the burnout length in the `*_analyze.py` files.
 
 
 
