@@ -1,6 +1,6 @@
 # KOI-3278
 
-This repository provides the code used to model the self-lensing binary, KOI-3278. It will reproduce the bulk of our analysis, including the MCMC modeling and the key figures.
+This repository provides the `Python 2.7.10` code used to model the self-lensing binary, KOI-3278. It will reproduce the bulk of our analysis, including the MCMC modeling and the key figures.
 
 If you make use of this code please cite our work: [Yahalomi et al., 2019](https://arxiv.org/abs/1904.11063).
 
@@ -31,21 +31,21 @@ This folder contains the python code used in order to create Figure 7 in the pap
 
 ### EinsteinianModel
 
-This folder contains the python code used in order to create the Einsteinian microlensing model. The supplementary functions are in "EinsteinMCMC_funcs.py". In order to run the MCMC model, use "EinsteinMCMC_run.py". In order to analyze the MCMC output chain, use "EinsteinMCMC_analyze.py". This code uses the Kepler photometry and the spectroscopic estimates of stellar primary parameters using SPC, Brewer, or SpecMatch analysis on HIRES spectra. The primary stellar parameter estimates from SPC, Brewer, and SpecMatch are in the "EinsteinMCMC_funcs.py" file.
+This folder contains the python code used in order to create the Einsteinian microlensing model. The supplementary functions are in `EinsteinMCMC_funcs.py`. In order to run the MCMC model, use `EinsteinMCMC_run.py`. In order to analyze the MCMC output chain, use `EinsteinMCMC_analyze.py`. This code uses the Kepler photometry and the spectroscopic estimates of stellar primary parameters using SPC, Brewer, or SpecMatch analysis on HIRES spectra. The primary stellar parameter estimates from SPC, Brewer, and SpecMatch are in the `EinsteinMCMC_funcs.py` file.
 
 
 ### JointModel
 
-This folder contains the python code used in order to create the Joint Einsteinian microlensing and Newtonian dynamical model.  The supplementary functions are in "JointMCMC_funcs.py" and the orbital fitting specific functions are in "JointMCMC_RVfuncs.py". In order to run the MCMC model, use "JointMCMC_run.py". In order to analyze the MCMC output chain, use "JointMCMC_analyze.py". This code uses the Kepler photometry, the spectroscopic estimates of stellar primary parameters using SPC, Brewer, or SpecMatch analysis on HIRES spectra, and the radial velocity observations from HIRES and TRES. The primary stellar parameter estimates from SPC, Brewer, and SpecMatch are in the "JointMCMC_funcs.py" file. The radial velocity observations from TRES and HIRES are in the "inputs.py" file.
+This folder contains the python code used in order to create the Joint Einsteinian microlensing and Newtonian dynamical model.  The supplementary functions are in `JointMCMC_funcs.py` and the orbital fitting specific functions are in `JointMCMC_RVfuncs.py`. In order to run the MCMC model, use `JointMCMC_run.py`. In order to analyze the MCMC output chain, use `JointMCMC_analyze.py`. This code uses the Kepler photometry, the spectroscopic estimates of stellar primary parameters using SPC, Brewer, or SpecMatch analysis on HIRES spectra, and the radial velocity observations from HIRES and TRES. The primary stellar parameter estimates from SPC, Brewer, and SpecMatch are in the `JointMCMC_funcs.py` file. The radial velocity observations from TRES and HIRES are in the `inputs.py` file.
 
 ### NewtonianDynamicalModel
 
-This folder contains the python code used in order to create the complete Newtonian dynamical model. The supplementary functions are in "NewtonianDynamicalMCMC_funcs.py" and the orbital fitting specific functions are in "NewtonianDynamicalMCMC_RVfuncs.py". In order to run the MCMC model, use "NewtonianDynamicalMCMC_run.py". In order to analyze the MCMC output chain, use "NewtonianDynamicalMCMC_analyze.py". This code uses the spectroscopic estimates of stellar primary parameters using SPC, Brewer, or SpecMatch analysis on HIRES spectra and the radial velocity observations from HIRES and TRES. The primary stellar parameter estimates from SPC, Brewer, and SpecMatch are in the "NewtonianDynamicalMCMC_run.py" file. The radial velocity observations from TRES and HIRES are in the "NewtonianDynamicalMCMC_run.py" file.
+This folder contains the python code used in order to create the complete Newtonian dynamical model. The supplementary functions are in `NewtonianDynamicalMCMC_funcs.py` and the orbital fitting specific functions are in `NewtonianDynamicalMCMC_RVfuncs.py`. In order to run the MCMC model, use "NewtonianDynamicalMCMC_run.py". In order to analyze the MCMC output chain, use `NewtonianDynamicalMCMC_analyze.py`. This code uses the spectroscopic estimates of stellar primary parameters using SPC, Brewer, or SpecMatch analysis on HIRES spectra and the radial velocity observations from HIRES and TRES. The primary stellar parameter estimates from SPC, Brewer, and SpecMatch are in the `NewtonianDynamicalMCMC_run.py` file. The radial velocity observations from TRES and HIRES are in the `NewtonianDynamicalMCMC_run.py` file.
 
 
 ### NewtonianOrbitalModel
 
-This folder contains the python code used in order to create the orbital fit to the radial velocity observations only. The supplementary functions are in "NewtonianOrbitalMCMC_funcs.py". In order to run the MCMC model, use "NewtonianOrbitalMCMC_run.py". In order to analyze the MCMC ouput chain, use "NewtonianOrbitalMCMC_analyze.py". This code uses the radial velocity observations from HIRES and TRES. The radial velocity observations from TRES and HIRES are in the "NewtonianOrbitalMCMC_run.py" file.
+This folder contains the python code used in order to create the orbital fit to the radial velocity observations only. The supplementary functions are in `NewtonianOrbitalMCMC_funcs.py`. In order to run the MCMC model, use `NewtonianOrbitalMCMC_run.py`. In order to analyze the MCMC ouput chain, use `NewtonianOrbitalMCMC_analyze.py`. This code uses the radial velocity observations from HIRES and TRES. The radial velocity observations from TRES and HIRES are in the `NewtonianOrbitalMCMC_run.py` file.
 
 
 
